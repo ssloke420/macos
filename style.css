@@ -2,3 +2,25 @@ body {
   background-image: url('wallpaper.jpg');
   background-size: cover;
 }
+
+#taskbar {
+  border: white 1px solid;
+  border-radius: 8px;
+  position: absolute;
+  width: 60vw;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 3px;
+  bottom: 5px;
+  justify-content: center;
+  right: 20vw;
+  left: 20vw;
+}
+#taskbar img {
+    width: auto;
+    height: 30px;
+    margin: 5px;
+}
