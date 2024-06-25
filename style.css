@@ -89,7 +89,7 @@ body {
   color: black;
   display: none;
 }
-.frameshown {
+.frameshown div{
   width: 50vw;
   height: 30px;
   background-color: gray;
