@@ -96,8 +96,7 @@ body {
   color: black;
 /*   text-align: center; */
   align-items: center;
-  display: flex;
-  margin: none; /* Ensure controls align to the left */
+  display: flex; /* Ensure controls align to the left */
   text-align: center;
 }
 .window p {
