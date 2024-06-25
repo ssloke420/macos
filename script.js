@@ -109,3 +109,7 @@ function dragElement(elmnt) {
     }
 }
 dragElement(document.getElementById("gframe"))
+
+document.addEventListener("dblclick", function() {
+    document.getElementById("app").innerHTML = "Finder";
+});
