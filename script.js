@@ -112,5 +112,6 @@ dragElement(document.getElementById("gframe"));
 
 
 document.addEventListener("dblclick", function() {
+    console.log("DBL CLICK DETECTED");
     document.getElementById("app").innerHTML = "Finder";
 });
