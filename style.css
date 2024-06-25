@@ -97,7 +97,7 @@ body {
 /*   text-align: center; */
   align-items: center;
   display: flex;
-  justify-content: space-between; /* Ensure controls align to the left */
+  margin: none; /* Ensure controls align to the left */
   text-align: center;
 }
 .window p {
