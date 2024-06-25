@@ -96,3 +96,6 @@ body {
   color: black;
   text-align: center;
 }
+.window p {
+  font-family: 'San Fransisco', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
