@@ -89,7 +89,7 @@ body {
   color: black;
   display: none;
 }
-.frameshown div{
+.frameshown{
   width: 50vw;
   height: 30px;
   background-color: gray;
@@ -103,11 +103,5 @@ body {
 .window p {
   font-family: 'San Fransisco', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-.controls {
-  padding: 0;
-  height: 15px;
-  width: 15px;
-  margin-right: auto; /* Adjust margin as needed */
-  
-}
+
 
