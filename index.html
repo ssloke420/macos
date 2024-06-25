@@ -7,16 +7,29 @@
   <body>
     <div id = "header">
       <img id = "appleLogo" src="https://logodix.com/logo/995552.png"/>
-      <p id = " app">Finder</p>
+      <p id = "app">Finder</p>
       <p>File</p>
       <p>Edit</p>
       <p>View</p>
       <p>Go</p>
       <p>Window</p>
       <p>Help</p>
+      <div id="tray">
+  
+        <p id = "datetime">Mon Jun 22 &nbsp; &nbsp; 9:41 AM</p>
+      </div>
+    </div>
+    <div id="gframe" class="window">
+      <div id="gframeheader" class="framehidden">
+        <p>Google Chrome</p>
+      </div>
+      <iframe src="https://www.google.com/search?igu=1" id = "gwindow" class="windowhidden"></iframe>
     </div>
     
     <div id = "taskbar">
+      <img src="https://icons.veryicon.com/png/Phone/iOS%208/Finder.png">
+      <img src="https://logos-world.net/wp-content/uploads/2020/08/Google-Chrome-Logo.png" onclick="toggleWindow('gwindow', 'gframeheader', 'Chrome')"/>
+
     </div>
     <script src = "script.js"></script>
     <!--Buggyyyyyyyyyyyyyyyyy--->
