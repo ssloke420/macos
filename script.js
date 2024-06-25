@@ -108,7 +108,8 @@ function dragElement(elmnt) {
         document.onmousemove = null;
     }
 }
-dragElement(document.getElementById("gframe"))
+dragElement(document.getElementById("gframe"));
+
 
 document.addEventListener("dblclick", function() {
     document.getElementById("app").innerHTML = "Finder";
