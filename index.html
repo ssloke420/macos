@@ -46,13 +46,36 @@
       </div>
       <textarea class="windowhidden" id="padwindow"></textarea>
     </div>
-    
+    <div id="tframe" class="window">
+      <div id="tframeheader" class="framehidden">
+        <img src="https://www.publicdomainpictures.net/pictures/310000/velka/red-circle.png" onclick="toggleWindow('twindow', 'tframeheader', 'Finder')" style="height: 15px;
+  width: 15px; float: left; margin: 5px;"/>
+        <img src="https://clipground.com/images/yellow-circle-png-1.png" onclick="toggleWindow('twindow', 'tframeheader', 'Terminal')" style= "  height: 15px;
+  width: 15px; float: left; margin: 5px;"/>
+        <img src="https://www.pngall.com/wp-content/uploads/14/Green-Circle-PNG-Picture.png" style= "  height: 15px;
+  width: 15px; float: left; margin: 5px;"/>
+        <p style=" margin-left: 350px;"> Terminal </p>
+      </div>
+      <iframe src="terminal.html" id = "twindow" class="windowhidden"></iframe>
+    </div>
+    <div id="setframe" class="window">
+      <div id="setframeheader" class="framehidden">
+        <img src="https://www.publicdomainpictures.net/pictures/310000/velka/red-circle.png" onclick="toggleWindow('setwindow', 'setframeheader', 'Finder')" style="height: 15px;
+  width: 15px; float: left; margin: 5px;"/>
+        <img src="https://clipground.com/images/yellow-circle-png-1.png" onclick="toggleWindow('setwindow', 'setframeheader', 'System Preferences')" style= "  height: 15px;
+  width: 15px; float: left; margin: 5px;"/>
+        <img src="https://www.pngall.com/wp-content/uploads/14/Green-Circle-PNG-Picture.png" style= "  height: 15px;
+  width: 15px; float: left; margin: 5px;"/>
+        <p style=" margin-left: 350px;"> System Preferences </p>
+      </div>
+      <iframe src="settings.html" id = "setwindow" class="windowhidden"></iframe>
+    </div>
     <div id = "taskbar">
       <img src="https://icons.veryicon.com/png/Phone/iOS%208/Finder.png">
       <img src="https://www.techora.net/wp-content/uploads/2017/10/Google-Chrome-for-MAC.png" onclick="toggleWindow('gwindow', 'gframeheader', 'Chrome')"/>
       <img src="https://cdn.jim-nielsen.com/macos/512/textedit-2021-06-03.png" onclick = "toggleWindow('padwindow', 'padframeheader','TextEdit')"/>
-      <img src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Settings-512.png"/>
-      <img src="https://help.apple.com/assets/5FDD15EE12A93C067904695E/5FDD15F412A93C0679046966/en_US/d94aa1c4979b25e9ffbda97fcbae219a.png"/>
+      <img src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Settings-512.png" onclick="toggleWindow('setwindow', 'setframeheader', 'System Preferences')"/>
+      <img src="https://help.apple.com/assets/5FDD15EE12A93C067904695E/5FDD15F412A93C0679046966/en_US/d94aa1c4979b25e9ffbda97fcbae219a.png" onclick = "toggleWindow('twindow', 'tframeheader', 'Terminal')"/>
       <img src="https://www.nicepng.com/png/full/203-2036322_trash-icon-png.png"/>
 
     </div>
