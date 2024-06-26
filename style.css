@@ -4,6 +4,10 @@ body {
   text-align: center;
   align-items: center;
   font-family: 'San Fransisco';
+  -webkit-user-select: none; /* Disable selection for webkit browsers */
+  -moz-user-select: none; /* Disable selection for Mozilla Firefox */
+  -ms-user-select: none; /* Disable selection for Internet Explorer/Edge */
+  user-select: none; /* Disable selection for all browsers */
 }
 
 #taskbar {
