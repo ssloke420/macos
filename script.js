@@ -110,7 +110,8 @@ function dragElement(elmnt) {
 }
 dragElement(document.getElementById("gframe"));
 dragElement(document.getElementById("padframe"));
-
+dragElement(document.getElementById("setframe"))
+dragElement(document.getElementById("tframe"))
 
 document.addEventListener("dblclick", function() {
     console.log("DBL CLICK DETECTED");
