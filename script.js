@@ -109,6 +109,7 @@ function dragElement(elmnt) {
     }
 }
 dragElement(document.getElementById("gframe"));
+dragElement(document.getElementById("padframe"));
 
 
 document.addEventListener("dblclick", function() {
