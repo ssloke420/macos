@@ -119,3 +119,31 @@ body {
   padding-right: 6px;
 }
 
+#battery-status {
+  display: flex;
+  align-items: center;
+}
+
+#battery-icon {
+  width: 40px;
+  height: 20px;
+  border: 2px solid #000;
+  position: relative;
+  margin-right: 10px;
+}
+
+#battery-icon::before {
+  content: '';
+  width: 5px;
+  height: 10px;
+  background: #000;
+  position: absolute;
+  top: 5px;
+  right: -7px;
+}
+
+#battery-fill {
+  height: 100%;
+  background: #0f0;
+  width: 0;
+}
