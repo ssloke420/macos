@@ -147,21 +147,23 @@ setInterval(updateDateTime, 1000);
 
 // Initial call to set the time immediately on page load
 updateDateTime();
+
 navigator.getBattery().then(function(battery) {
-  function updateBatteryStatus() {
-    const batteryLevel = Math.floor(battery.level * 100);
-    document.getElementById('battery-fill').style.width = batteryLevel + '%';
-    document.getElementById('battery-level').textContent = batteryLevel + '%';
-    
-    // Change color based on level
-    const fillColor = batteryLevel > 20 ? '#0f0' : '#f00';
-    document.getElementById('battery-fill').style.background = fillColor;
-  }
+    function updateBatteryStatus() {
+      const batteryLevel = Math.floor(battery.level * 100);
+      document.getElementById('battery-fill').style.width = batteryLevel + '%';
+      document.getElementById('battery-level').textContent = batteryLevel + '%';
+      
+      // Change color based on level
+      const fillColor = batteryLevel > 20 ? '#0f0' : '#f00';
+      document.getElementById('battery-fill').style.background = fillColor;
+    }
+  
+    // Initial update
+    updateBatteryStatus();
+  
+    // Update when the battery level or charging status changes
+    battery.addEventListener('levelchange', updateBatteryStatus);
+    battery.addEventListener('chargingchange', updateBatteryStatus);
+  });
 
-  // Initial update
-  updateBatteryStatus();
-
-  // Update when the battery level or charging status changes
-  battery.addEventListener('levelchange', updateBatteryStatus);
-  battery.addEventListener('chargingchange', updateBatteryStatus);
-});
