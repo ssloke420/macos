@@ -147,6 +147,7 @@ setInterval(updateDateTime, 1000);
 
 // Initial call to set the time immediately on page load
 updateDateTime();
+
 navigator.getBattery().then(function(battery) {
     function updateBatteryStatus() {
       const batteryLevel = Math.floor(battery.level * 100);
@@ -165,3 +166,4 @@ navigator.getBattery().then(function(battery) {
     battery.addEventListener('levelchange', updateBatteryStatus);
     battery.addEventListener('chargingchange', updateBatteryStatus);
   });
+
