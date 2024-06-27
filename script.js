@@ -167,3 +167,20 @@ navigator.getBattery().then(function(battery) {
     battery.addEventListener('chargingchange', updateBatteryStatus);
   });
 
+document.addEventListener('DOMContentLoaded', (event) => {
+  const menuItems = document.querySelectorAll('.menu-item');
+  menuItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      const dropdown = item.querySelector('.dropdown-content');
+      if (dropdown) {
+        dropdown.style.display = 'block';
+      }
+    });
+    item.addEventListener('mouseleave', () => {
+      const dropdown = item.querySelector('.dropdown-content');
+      if (dropdown) {
+        dropdown.style.display = 'none';
+      }
+    });
+  });
+});
