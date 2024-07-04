@@ -46,7 +46,7 @@ function toggleWindow(windowId, frameId, app) {
 }
 function dragElement(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-    
+    console.log("Dragging element:", elmnt.id);
     if (document.getElementById(elmnt.id + "header")) {
         // If present, the header is where you move the DIV from:
         document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
