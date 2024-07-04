@@ -112,7 +112,7 @@ dragElement(document.getElementById("gframe"));
 dragElement(document.getElementById("padframe"));
 dragElement(document.getElementById("setframe"))
 dragElement(document.getElementById("tframe"))
-
+dragElement(document.getElementById("mframe"))
 document.addEventListener("dblclick", function() {
     console.log("DBL CLICK DETECTED");
     document.getElementById("app").innerHTML = "Finder";
