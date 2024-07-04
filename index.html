@@ -76,6 +76,18 @@
       </div>
       <iframe src="settings.html" id = "setwindow" class="windowhidden"></iframe>
     </div>
+        <div id="mframe" class="window">
+      <div id="mframeheader" class="framehidden">
+        <img src="https://www.publicdomainpictures.net/pictures/310000/velka/red-circle.png" onclick="toggleWindow('mwindow', 'mframeheader', 'Finder')" style="height: 15px;
+  width: 15px; float: left; margin: 5px;"/>
+        <img src="https://clipground.com/images/yellow-circle-png-1.png" onclick="toggleWindow('mwindow', 'mframeheader', 'iMessages')" style= "  height: 15px;
+  width: 15px; float: left; margin: 5px;"/>
+        <img src="https://www.pngall.com/wp-content/uploads/14/Green-Circle-PNG-Picture.png" style= "  height: 15px;
+  width: 15px; float: left; margin: 5px;"/>
+        <p style=" margin-left: 350px;"> iMessages </p>
+      </div>
+      <iframe src="messages.html" id = "mwindow" class="windowhidden"></iframe>
+    </div>
       <div id="taskbar">
         <div class="taskbar-icon">
             <img src="https://icons.veryicon.com/png/Phone/iOS%208/Finder.png" alt="Finder Icon">
@@ -97,7 +109,9 @@
             <img src="https://help.apple.com/assets/5FDD15EE12A93C067904695E/5FDD15F412A93C0679046966/en_US/d94aa1c4979b25e9ffbda97fcbae219a.png" alt="Terminal Icon">
             <div class="app-name">Terminal</div>
         </div>
-
+        <div class="taskbar-icon" onclick="toggleWindow('mwindow', 'mframeheader', 'iMessage')">
+          <img src="https://cdn.icon-icons.com/icons2/3053/PNG/512/messages_macos_bigsur_icon_189468.png">
+        </div>
         <div class="taskbar-icon">
             <img src="https://www.nicepng.com/png/full/203-2036322_trash-icon-png.png" alt="Trash Icon">
             <div class="app-name">Trash</div>
